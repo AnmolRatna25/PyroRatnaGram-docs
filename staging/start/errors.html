@@ -13,7 +13,7 @@
     
     
       
-        <title>Error Handling - Pyrofork Documentation</title>
+        <title>Error Handling - PyroRatnaGram Documentation</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="Pyrofork Documentation" class="md-header__button md-logo" aria-label="Pyrofork Documentation" data-md-component="logo">
+    <a href="../index.html" title="PyroRatnaGram Documentation" class="md-header__button md-logo" aria-label="PyroRatnaGram Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -95,7 +95,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Pyrofork Documentation
+            PyroRatnaGram Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -280,12 +280,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Pyrofork Documentation" class="md-nav__button md-logo" aria-label="Pyrofork Documentation" data-md-component="logo">
+    <a href="../index.html" title="PyroRatnaGram Documentation" class="md-nav__button md-logo" aria-label="PyroRatnaGram Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
     </a>
-    Pyrofork Documentation
+    PyroRatnaGram Documentation
   </label>
   
     <div class="md-nav__source">
@@ -595,7 +595,7 @@
   
     <li class="md-nav__item">
       <a href="../api/client.html" class="md-nav__link">
-        <span class="md-ellipsis">Pyrofork Client</span>
+        <span class="md-ellipsis">Pyro<wbr>Ratna<wbr>Gram Client</span>
       </a>
     </li>
   
@@ -1237,7 +1237,7 @@
 
 <h1 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Link to this heading">¶</a></h1>
 <p>Errors can be correctly handled with <code class="docutils literal notranslate"><span class="pre">try...except</span></code> blocks in order to control the behaviour of your application.
-Pyrofork errors all live inside the <code class="docutils literal notranslate"><span class="pre">errors</span></code> package:</p>
+PyroRatnaGram errors all live inside the <code class="docutils literal notranslate"><span class="pre">errors</span></code> package:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">errors</span>
 </code></pre></div>
 </div>
@@ -1264,7 +1264,7 @@ This error is raised every time a method call against Telegram’s API was unsuc
 traceback), because it makes it impossible to understand what went wrong.</p>
 </div>
 <h2 id="error-categories">Error Categories<a class="headerlink" href="#error-categories" title="Link to this heading">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">RPCError</span></code> packs together all the possible errors Telegram could raise, but to make things tidier, Pyrofork
+<p>The <code class="docutils literal notranslate"><span class="pre">RPCError</span></code> packs together all the possible errors Telegram could raise, but to make things tidier, PyroRatnaGram
 provides categories of errors, which are named after the common HTTP errors and are subclass-ed from the <code class="docutils literal notranslate"><span class="pre">RPCError</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram.errors</span><span class="w"> </span><span class="kn">import</span> <span class="n">BadRequest</span><span class="p">,</span> <span class="n">Forbidden</span><span class="p">,</span> <span class="o">...</span>
 </code></pre></div>
@@ -1279,7 +1279,7 @@ provides categories of errors, which are named after the common HTTP errors and 
 <li><p><a class="reference internal" href="../api/errors/internal-server-error.html"><span class="doc">500 - InternalServerError</span></a></p></li>
 </ul>
 <h2 id="single-errors">Single Errors<a class="headerlink" href="#single-errors" title="Link to this heading">¶</a></h2>
-<p>For a fine-grained control over every single error, Pyrofork does also expose errors that deal each with a specific
+<p>For a fine-grained control over every single error, PyroRatnaGram does also expose errors that deal each with a specific
 issue. For example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram.errors</span><span class="w"> </span><span class="kn">import</span> <span class="n">FloodWait</span>
 </code></pre></div>
@@ -1314,7 +1314,7 @@ issue. For example:</p>
 </li>
 </ul>
 <h2 id="unknown-errors">Unknown Errors<a class="headerlink" href="#unknown-errors" title="Link to this heading">¶</a></h2>
-<p>In case Pyrofork does not know anything about a specific error yet, it raises a generic error from its known category,
+<p>In case PyroRatnaGram does not know anything about a specific error yet, it raises a generic error from its known category,
 for example, an unknown error with error code <code class="docutils literal notranslate"><span class="pre">400</span></code>, will be raised as a <code class="docutils literal notranslate"><span class="pre">BadRequest</span></code>. This way you can catch the
 whole category of errors and be sure to also handle these unknown errors.</p>
 <h2 id="errors-with-values">Errors with Values<a class="headerlink" href="#errors-with-values" title="Link to this heading">¶</a></h2>

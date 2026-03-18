@@ -13,7 +13,7 @@
     
     
       
-        <title>MTProto vs. Bot API - Pyrofork Documentation</title>
+        <title>MTProto vs. Bot API - PyroRatnaGram Documentation</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="Pyrofork Documentation" class="md-header__button md-logo" aria-label="Pyrofork Documentation" data-md-component="logo">
+    <a href="../index.html" title="PyroRatnaGram Documentation" class="md-header__button md-logo" aria-label="PyroRatnaGram Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -95,7 +95,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Pyrofork Documentation
+            PyroRatnaGram Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -280,12 +280,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Pyrofork Documentation" class="md-nav__button md-logo" aria-label="Pyrofork Documentation" data-md-component="logo">
+    <a href="../index.html" title="PyroRatnaGram Documentation" class="md-nav__button md-logo" aria-label="PyroRatnaGram Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
     </a>
-    Pyrofork Documentation
+    PyroRatnaGram Documentation
   </label>
   
     <div class="md-nav__source">
@@ -525,7 +525,7 @@
   
     <li class="md-nav__item">
       <a href="../api/client.html" class="md-nav__link">
-        <span class="md-ellipsis">Pyrofork Client</span>
+        <span class="md-ellipsis">Pyro<wbr>Ratna<wbr>Gram Client</span>
       </a>
     </li>
   
@@ -1208,9 +1208,9 @@
 
 
 <h1 id="mtproto-vs-bot-api">MTProto vs. Bot API<a class="headerlink" href="#mtproto-vs-bot-api" title="Link to this heading">¶</a></h1>
-<p>Pyrofork is a framework written from the ground up that acts as a fully-fledged Telegram client based on the MTProto
-API. This means that Pyrofork is able to execute any official client and bot API action and more. This page will
-therefore show you why Pyrofork might be a better choice for your project by comparing the two APIs, but first, let’s
+<p>PyroRatnaGram is a framework written from the ground up that acts as a fully-fledged Telegram client based on the MTProto
+API. This means that PyroRatnaGram is able to execute any official client and bot API action and more. This page will
+therefore show you why PyroRatnaGram might be a better choice for your project by comparing the two APIs, but first, let’s
 make it clear what actually is the MTProto and the Bot API.</p>
 <nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
@@ -1228,7 +1228,7 @@ itself — it’s the only protocol used to exchange information between a clien
 from the Bot API. The main Telegram API is able to authorize both users and bots and is built on top of the MTProto
 encryption protocol by means of <a class="reference external" href="https://core.telegram.org/mtproto/serialize">binary data serialized</a> in a specific way, as described by the <a class="reference external" href="https://core.telegram.org/mtproto/TL">TL language</a>, and
 delivered using UDP, TCP or even HTTP as transport-layer protocol. Clients that make use of Telegram’s main API, such as
-Pyrofork, implement all these details.</p>
+PyroRatnaGram, implement all these details.</p>
 <h2 id="what-is-the-bot-api">What is the Bot API?<a class="headerlink" href="#what-is-the-bot-api" title="Link to this heading">¶</a></h2>
 <p>The <a class="reference external" href="https://core.telegram.org/bots/api">Bot API</a> is an HTTP(S) interface for building normal bots using a sub-set of the main Telegram API. Bots are
 special accounts that are authorized via tokens instead of phone numbers. The Bot API is built yet again on top of the
@@ -1238,8 +1238,8 @@ servers using MTProto.</p>
 <img alt="/_static/img/mtproto-vs-bot-api.png" src="/_static/img/mtproto-vs-bot-api.png" />
 </figure>
 <h2 id="advantages-of-the-mtproto-api">Advantages of the MTProto API<a class="headerlink" href="#advantages-of-the-mtproto-api" title="Link to this heading">¶</a></h2>
-<p>Here is a non-exhaustive list of all the advantages in using MTProto-based libraries – such as Pyrofork – instead of
-the official HTTP Bot API. Using Pyrofork you can:</p>
+<p>Here is a non-exhaustive list of all the advantages in using MTProto-based libraries – such as PyroRatnaGram – instead of
+the official HTTP Bot API. Using PyroRatnaGram you can:</p>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><span class="guilabel">+</span> <strong>Authorize both user and bot identities</strong></p></li>
 <li><p><span class="guilabel">–</span> The Bot API only allows bot accounts</p></li>
